@@ -1,0 +1,9 @@
+[package]
+name = 'mdd_multisender_dapp'
+version = '1.0.0'
+
+[addresses]
+my_addrx = "0xe1f608ef49c54a888ff5b0dfe5eb28bf65538cb54f9a45bee5011f384c68e29a"
+
+[dependencies] 
+AptosFramework = { local = "../../aptos-core/aptos-move/framework/aptos-framework"}
