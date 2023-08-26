@@ -1,9 +1,11 @@
 [package]
-name = 'mdd_multisender_dapp'
+name = 'nft-minting'
 version = '1.0.0'
 
 [addresses]
-my_addrx = "0xe1f608ef49c54a888ff5b0dfe5eb28bf65538cb54f9a45bee5011f384c68e29a"
+mint_nft = "0x95275448fbca2c79357a28d9a8e0cb58c486a96a3d4b40d90469ba23e7152cf6"
 
-[dependencies] 
-AptosFramework = { local = "../../aptos-core/aptos-move/framework/aptos-framework"}
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework", rev = "mainnet" }
+AptosToken = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-token", rev = "mainnet" } 
+AptosTokenObjects = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-token-objects", rev = "mainnet" }
